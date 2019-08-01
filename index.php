@@ -43,7 +43,7 @@ exit;
 $db->delete("name='galo-pera'"); // pro delete vc só precisa passar a condição, no caso, estamos excluindo todos os registros da tabela que o name = galo-pera
 $db->delete("id=6"); // excluindo o registro de id 6
 $db->delete("status=0"); // excluindo registros que status = zero
-print_r($db->read($where = "name='galo-pera'")); //e fazemos uma busca pelo item alterado (a condição poderia ser $where = "id='4'"), traria o mesmo registro
+print_r($db->read()); //e fazemos uma busca pelo item alterado (a condição poderia ser $where = "id='4'"), traria o mesmo registro
 
 
 
